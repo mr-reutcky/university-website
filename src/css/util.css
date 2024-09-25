@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
 /*--------------------------------*/
 /* Position                       */
 /*--------------------------------*/
@@ -12,8 +18,28 @@
   justify-content: space-between;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+  }
+
 .relative {
   position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.justify-left {
+  justify-self: left;
+}
+
+.justify-right {
+  justify-self: right;
 }
 
 .center {
@@ -21,8 +47,12 @@
   align-items: center;
 }
 
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
 .row {
-  margin-top: 80px;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -31,8 +61,16 @@
   gap: 30px;
 }
 
+gap-20 {
+  gap: 20px;
+}
+
 .gap-10 {
   gap: 10px;
+}
+
+.z-index-1 {
+  z-index: 1;
 }
 /*--------------------------------*/
 /* text                           */

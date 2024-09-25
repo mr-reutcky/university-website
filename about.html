@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/about.css">
   </head>
   <body>
     <header>
@@ -41,11 +41,15 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="elements container">
-        <h2>About Us</h2>
-        <article>
-            <p>
+    <main>   
+      <article class="container">
+        <div class="about-wrap flex flex-column">
+          <div>
+            <h2>About Us</h2>
+          </div>
+          <div class="grid-center">
+            <div class="justify-left">
+              <p>
                 Founded in 1895, Cedar Vally University has been a leader 
                 in higher education for over a century. What began as a 
                 small regional college has grown into a globally 
@@ -57,8 +61,10 @@
                 continue to uphold the values that have defined us for 
                 generations while evolving to meet the demands of a 
                 rapidly changing world.
-            </p>
-            <p>
+              </p>
+            </div>
+            <div class="justify-right">
+              <p>
                 Throughout our rich history, Cedar Vally has consistently 
                 pioneered advancements in education and research. In the 
                 early 20th century, we expanded our curriculum to include 
@@ -69,8 +75,10 @@
                 Our reputation for resilience and innovation was cemented 
                 during these times, and we became known for pushing the 
                 boundaries of knowledge across multiple disciplines.
-            </p>
-            <p>
+              </p>
+            </div>
+            <div class="justify-left">
+              <p>
                 By the mid-20th century, Cedar Vally University 
                 was at the forefront of groundbreaking research, contributing 
                 to key advancements in technology, medicine, and the humanities. 
@@ -81,8 +89,10 @@
                 ensure that students are not only knowledgeable but 
                 equipped with practical skills to lead in their 
                 respective fields.
-            </p>
-            <p>
+              </p>
+            </div>
+            <div class="justify-right">
+              <p> 
                 At Cedar Vally, education extends beyond the classroom. 
                 Our vibrant campus life is a hub for intellectual and 
                 cultural exchange, offering over 200 student 
@@ -90,11 +100,13 @@
                 community engagement. Our faculty, composed of leading 
                 scholars and industry experts, provide students with 
                 mentorship that encourages critical thinking and 
-                innovation. The university’s mix of historic charm and 
+                innovation. The University's mix of historic charm and 
                 modern facilities creates an environment where students 
                 can thrive academically and socially.
-            </p>
-            <p>
+              </p>
+            </div>
+            <div class="justify-left">
+              <p>
                 Looking ahead, Cedar Vally University remains committed 
                 to preparing the next generation of global leaders. We 
                 continue to expand our initiatives in sustainability, 
@@ -105,52 +117,152 @@
                 of a Silvergate education. We invite you to be part of 
                 our journey as we continue to shape the future of 
                 education and society.
-            </p>
-        </article>
-        <section class="contact-us">
-            <p>
-                If you have any questions or need more information, 
-                feel free to 
-                <a href="./contact-us.html" class="contact-link">
-                    contact us
-                </a>
-                 today.
-            </p>
-        </section>
-        <section class="statistics-dashboard">
-            <div class="statistics">
-                <div class="stat-item">
-                    <span class="stat-number">25,000+</span>
-                    <p>Students Enrolled</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">120+</span>
-                    <p>Countries Represented</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <p>Faculty Members</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100,000+</span>
-                    <p>Alumni Worldwide</p>
-                </div>
+              </p>
             </div>
-    
-            <div class="achievements">
-                <h2>Awards & Recognition</h2>
-                <ul>
-                    <li>Ranked among the top 100 global universities</li>
-                    <li>Awarded for outstanding research in the fields of technology and humanities</li>
-                    <li>Recognized for leadership in sustainability and green initiatives</li>
-                </ul>
+          </div>
+        </div>
+      </article>
+      <section class="reviews">
+        <div>
+          <h2>Reviews</h2>
+        </div>
+        <div class="container">
+          <div class="outerbox relative">
+            <!-- box will be the background of the whole slider system -->
+            <div class="box relative"> 
+              <div id="pair1" class="testipair absolute">
+                <div class="flex wrap gap-10">
+                  <!-- testibox is each individual review -->
+                  <div class="testibox grid-center">
+                    <p>"This is the best place ever"</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p class="name">- Steve Jobs -</p>
+                  </div>
+                  <div class="testibox grid-center">
+                    <p>"Meh"</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p class="name">- Herbie Fully Loaded -</p>
+                  </div>
+                </div>
+              </div>
+              <div id="pair2" class="testipair absolute">
+                <div class="flex wrap gap-10">
+                  <div class="testibox grid-center">
+                    <p>"This place is alright. I learnt a litle bit"</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p class="name">- Michael Meyers -</p>
+                  </div>
+                  <div class="testibox grid-center">
+                    <p>"<i class="fa-solid fa-poop"></i>"</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p class="name">- Bob Burger -</p>
+                  </div>
+                </div>
+              </div>
+              <div id="pair3" class="testipair absolute">
+                <div class="flex wrap gap-10">
+                  <div class="testibox grid-center">
+                    <p>"AMAZING. Best education ever"</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="name">- Jimmy Jones -</p>
+                  </div>
+                  <div class="testibox grid-center">
+                    <p>"It's.... Alright."</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p class="name">- James Juno -</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    </div>
+            <div class="toggles absolute">
+              <div class="flex gap-10">
+                <a href="#pair2" class="navtoggle easeinout"></a>
+                <a href="#pair3" class="navtoggle easeinout"></a>
+                <a href="#pair1" class="navtoggle easeinout"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us">
+          <p>
+              If you have any questions or need more information, 
+              feel free to 
+              <a href="./contact-us.html" class="contact-link">
+                  contact us
+              </a>
+                today.
+          </p>
+      </section>
+      <section class="statistics-dashboard">
+          <div class="statistics">
+              <div class="stat-item">
+                  <span class="stat-number">25,000+</span>
+                  <p>Students Enrolled</p>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-number">120+</span>
+                  <p>Countries Represented</p>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-number">500+</span>
+                  <p>Faculty Members</p>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-number">100,000+</span>
+                  <p>Alumni Worldwide</p>
+              </div>
+          </div>
+  
+          <div class="achievements">
+              <h2>Awards & Recognition</h2>
+              <ul>
+                  <li>Ranked among the top 100 global universities</li>
+                  <li>Awarded for outstanding research in the fields of technology and humanities</li>
+                  <li>Recognized for leadership in sustainability and green initiatives</li>
+              </ul>
+          </div>
+      </section>
     </main>
     <footer>
-      <section class="container footer-columns row flex center">
-        <div class="col center footer-address">
+      <section class="container footer-columns row flex flex-row center">
+        <div class="col footer-address">
           <h3>Cedar Valley University</h3>
           <p>123 Academic Way</p>
           <p>Cedarwood, CV</p>
@@ -158,36 +270,36 @@
           <p>+1(204) 555-1234</p>
           <a href="mailto: admin@cedarvalleyuniversity.com">Contact us &gt;</a>
         </div>
-        <div class="col center footer-info">
-          <h4>Infromation for</h4>
-          <div><a href="">Alumni</a></div>
-          <div><a href="">Community</a></div>
-          <div><a href="">Current Students</a></div>
-          <div><a href="">Faculty and Staff</a></div>
-          <div><a href="">Future Students</a></div>
-          <div><a href="">International Students</a></div>
-          <div><a href="">Parents</a></div>
-        </div>
-        <div class="col center footer-resources">
-          <h4>Resources</h4>
-          <div><a href="">A-Z Index</a></div>
-          <div><a href="">Directory</a></div>
-          <div><a href="">Email</a></div>
-          <div><a href="">Maps</a></div>
-          <div><a href="">MyLearning</a></div>
-          <div><a href="">WebAdvisor</a></div>
-        </div>
-        <div class="col gap-10 center footer-social icons">
-          <div class="row-1 gap-10 flex">
-            <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
-            <div><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+        
+          <div class="col footer-info">
+            <h4>Infromation for</h4>
+            <div><a href="#">Alumni</a></div>
+            <div><a href="#">Community</a></div>
+            <div><a href="#">Current Students</a></div>
+            <div><a href="#">Faculty and Staff</a></div>
+            <div><a href="#">Future Students</a></div>
+            <div><a href="#">International Students</a></div>
+            <div><a href="#">Parents</a></div>
           </div>
-          <div class="row-2 gap-10 flex">
-            <div><a href=""><i class="fa-brands fa-youtube"></i></a></div>
-            <div><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
+          <div class="col footer-resources">
+            <h4>Resources</h4>
+            <div><a href="#">A-Z Index</a></div>
+            <div><a href="#">Directory</a></div>
+            <div><a href="#">Email</a></div>
+            <div><a href="#">Maps</a></div>
+            <div><a href="#">MyLearning</a></div>
+            <div><a href="#">WebAdvisor</a></div>
           </div>
-          <div class="row-3">
-            <a href="">DONATE</a>
+          <div class="col col-4 flex gap-10 center footer-social icons">
+            <div class="row-1 gap-10 flex center">
+              <div><a><i class="fa-brands fa-instagram"></i></a></div>
+              <div><a><i class="fa-brands fa-facebook"></i></a></div>
+              <div><a><i class="fa-brands fa-youtube"></i></a></div>
+              <div><a><i class="fa-brands fa-x-twitter"></i></a></div>
+            </div>
+            <div class="row-3 text-center">
+              <a class="donate-button" href="">DONATE</a>
+            </div>
           </div>
         </div>
       </section>
