@@ -7,19 +7,39 @@
     <meta name="description" content="My Web Project">
     <meta name="keywords" content="post-secondary, college, university">
     <title>Contact us</title>
-    <link rel="icon" href="./src/img/" type="image/x-icon">
+    <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
-    <link rel="stylesheet" href="./src/css/root.css">
-    <link rel="stylesheet" href="./src/css/util.css">
     <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
     <header>
-
+      <div class="container flex flex-between relative">
+        <div class="flex center">
+          <div class="crest">
+            <!-- Will change the "alt" when we have a school name -->
+            <img src="./src/img/favicon.png" alt="Cedar Valley University" />
+          </div>
+          <div class="uni-name">
+            <a href="./index.html">Cedar Valley University</a>
+          </div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <i class="fas fa-bars"></i>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="#">Enroll now</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -27,7 +47,48 @@
       </div>
     </main>
     <footer>
-      
+      <section class="container footer-columns row flex center">
+        <div class="col center footer-address">
+          <h3>Cedar Valley University</h3>
+          <p>123 Academic Way</p>
+          <p>Cedarwood, CV</p>
+          <P>45678</P>
+          <p>+1(204) 555-1234</p>
+          <a href="mailto: admin@cedarvalleyuniversity.com">Contact us &gt;</a>
+        </div>
+        <div class="col center footer-info">
+          <h4>Infromation for</h4>
+          <div><a href="">Alumni</a></div>
+          <div><a href="">Community</a></div>
+          <div><a href="">Current Students</a></div>
+          <div><a href="">Faculty and Staff</a></div>
+          <div><a href="">Future Students</a></div>
+          <div><a href="">International Students</a></div>
+          <div><a href="">Parents</a></div>
+        </div>
+        <div class="col center footer-resources">
+          <h4>Resources</h4>
+          <div><a href="">A-Z Index</a></div>
+          <div><a href="">Directory</a></div>
+          <div><a href="">Email</a></div>
+          <div><a href="">Maps</a></div>
+          <div><a href="">MyLearning</a></div>
+          <div><a href="">WebAdvisor</a></div>
+        </div>
+        <div class="col gap-10 center footer-social icons">
+          <div class="row-1 gap-10 flex">
+            <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+            <div><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+          </div>
+          <div class="row-2 gap-10 flex">
+            <div><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+            <div><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
+          </div>
+          <div class="row-3">
+            <a href="">DONATE</a>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
