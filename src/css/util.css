@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*--------------------------------*/
+/* Position                       */
+/*--------------------------------*/
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  margin-top: 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+/*--------------------------------*/
+/* text                           */
+/*--------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+/*--------------------------------*/
+/* Transitions                    */
+/*--------------------------------*/
+
+.easeinout {
+  transition: all 0.25s ease-in-out;
+}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+:root {
+  --app-font-color: #242424;
+  --app-color-primary: #900;
+  --app-color-secondary: #99004d;
+  --app-color-tertiary: #994d00;
+  --app-box-radius: 20px;
+}
