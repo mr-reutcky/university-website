@@ -152,6 +152,13 @@ article p {
   margin-bottom: 100px;
 }
 
+.about-image {
+  height: 200px;
+  object-fit: fill;
+  justify-self: center;
+  overflow: hidden;
+}
+
 /* Reviews */
 .reviews {
   background-color: #fff;
@@ -228,7 +235,7 @@ article p {
 }
 
 .navtoggle:hover {
-  background-color: #900;
+  background-color: var(--app-color-primary);
 }
 
 /* Contact Us Section */

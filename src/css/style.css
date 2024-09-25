@@ -145,7 +145,7 @@ header {
 /*--------------------------------*/
 
 main {
-  height: fit-content;
+  max-height: fit-content;
   background-color: #f7f8f9;
 }
 
@@ -212,11 +212,12 @@ main {
       font-size: 1.5rem;
       color: #fff;
   }
-
-  a:hover {
-    background-color: var(--app-color-secondary);
-  }
 }
+
+.call-to-action:hover {
+    background-color: var(--app-color-secondary);
+}
+
 
 @media screen and (max-width: 1030px) {
   .tagline-top {
@@ -246,10 +247,12 @@ main {
 /*  Levels of education           */
 /*--------------------------------*/
 
-h2 {
-  font-size: 30px;
+.sections h3 {
+  text-align: center;
+  color: var(--app-color-primary);
+  font-size: 35px;
   text-decoration: none;
-  margin-top: 15px; 
+  margin: 25px;
 }
 
 .sections {
@@ -257,30 +260,59 @@ h2 {
   margin-top: 0; 
 }
 
+.row {
+  margin-top: 10px;
+}
+
 .cols {
   flex: 0 0 auto;
-  width: calc(25% - 20px);
   height: 500px;
+  width: calc(25% - 20px);
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: var(--app-box-shadow);
-  padding: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 25px;
 }
 
-a {
-  text-decoration: none;
-  color: #1a1d28;
+.images {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
-button {
-  padding: 5px 20px;
-  border-radius: 15px;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #fff;
+.one {
+  padding: 0 25px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.sections button {
+  padding: 10px;
+  width: 150px;
+  border-radius: 50px;
   background-color: var(--app-color-primary);
+  margin-left: 25px;
+  align-self: flex-start;
+  font-size: 16px;
+}
+
+.sections button:hover {
+  background-color: var(--app-color-secondary);
+}
+
+.two {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
 }
 
 button:hover {
@@ -292,7 +324,7 @@ button:hover {
   margin: 15px 0;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
 
   h2 {
       font-size: 25px;
@@ -310,9 +342,11 @@ button:hover {
   }
 
   .cols {
+    height: 350px;
       width: 100%;
   }
 }
+
 
 
 /*--------------------------------*/
@@ -325,23 +359,23 @@ button:hover {
   justify-content: center;
   align-items: center;
   background-color: #900;
-  background:var(--app-color-primary) url(../img/middlebanner.jpg) center/cover no-repeat;
+  background:
+  var(--app-color-primary) url(../img/middlebanner.jpg) center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .review-box {
-  height: 250px; 
-  width: 800px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.5);
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border-radius: var(--app-box-radius);
-  background-color: rgb( 0 0 0 / 30%);
 }
 
 .review {
   color: #fff;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .alumni {
@@ -353,18 +387,18 @@ button:hover {
 @media screen and (max-width: 768px) {
 
   .review {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
 
   .review {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   .alumni {
-      font-size: 1rem;
+      font-size: 0.7rem;
   }
 }
 
@@ -421,6 +455,7 @@ Uncertain if this is the correct height for this.
   object-fit: cover;
   overflow: hidden;
   justify-self: center;
+  border-radius: 5px;
 }
 
 .single .image {
