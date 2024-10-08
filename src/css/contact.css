@@ -443,6 +443,13 @@ footer {
     font-family: 500;
     padding: 8px 40px;
     background-color: #fff;
+    border-radius: var(--app-box-radius);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .row-3 a:hover {
+    padding: 10px 42px;
+    text-decoration: none;
   }
 
   @media screen and (max-width: 900px) {
