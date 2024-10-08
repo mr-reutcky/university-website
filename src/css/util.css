@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: var(--app-font-color);
-}
-
 /*--------------------------------*/
 /* Position                       */
 /*--------------------------------*/
@@ -23,23 +18,14 @@ a {
   justify-content: space-between;
 }
 
-.flex-even {
-  justify-content: space-evenly;
-}
-
 .flex-row {
   flex-direction: row;
 }
-.nowrap {
-  flex-wrap: nowrap;
-}
+
 .flex-column {
   flex-direction: column;
   }
 
-.flex-backwards {
-  flex-direction: row-reverse;
-}
 .relative {
   position: relative;
 }
@@ -75,7 +61,7 @@ a {
   gap: 30px;
 }
 
-.gap-20 {
+gap-20 {
   gap: 20px;
 }
 
@@ -101,4 +87,3 @@ a {
 .easeinout {
   transition: all 0.25s ease-in-out;
 }
-

@@ -5,7 +5,6 @@
   --app-color-primary: #900;
   --app-color-secondary: #c00000;
   --app-color-tertiary: #994d00;
-  --app-color-bg: #f9f9f9;
-  --app-box-radius: 6px;
+  --app-box-radius: 8px;
   --app-box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
 }
