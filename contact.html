@@ -6,7 +6,7 @@
     <meta name="author" content="Myles Reid, Oluwajuwon Michael Shuaibu, David Sommerville, Samuel Reutcky">
     <meta name="description" content="My Web Project">
     <meta name="keywords" content="post-secondary, college, university">
-    <title>Contact us</title>
+    <title>Contact us | Cedar Valley University</title>
     <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,11 +20,10 @@
       <div class="container flex flex-between relative">
         <div class="flex center">
           <div class="crest">
-            <!-- Will change the "alt" when we have a school name -->
             <img src="./src/img/favicon.png" alt="Cedar Valley University" />
           </div>
           <div class="uni-name">
-            <h1><a href="./index.html">Cedar Valley University</a><h1>
+            <a href="./index.html">Cedar Valley University</a>
           </div>
         </div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -35,15 +34,113 @@
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="#">Enroll now</a></li>
+            <li><a href="#">Campus Life</a></li>
+            <li><a class="enroll-now" href="#">Enroll now</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
+      <div class="hero-banner flex center">
+        <h2>Contact Us</h2>
+      </div> 
       <div class="container">
-        
+        <div class="item">
+          <div class="submit-form">
+            <h4 class="third-text">Send us a message</h4>
+            <form>
+              <div class="flex flex-column input-box names">
+                <div class="names flex input-box">
+                  <div class="half-width">
+                    <label for="name">First Name</label>
+                    <input 
+                      type="text" 
+                      class="input" 
+                      required placeholder="John"
+                    >
+                  </div>
+                  <div class="half-width">
+                      <label for="name">Last Name</label>
+                      <input 
+                        type="text" 
+                        class="input" 
+                        required placeholder="Rebel"
+                      >
+                  </div>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input 
+                      type="email" 
+                      class="input" 
+                      required placeholder="Johnrebel@gmail.com"
+                    >
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone</label>
+                    <input 
+                      type="tel" 
+                      class="input" 
+                      required placeholder="123 456 7890"
+                    >
+                </div>
+                <div class="input-box">
+                    <label for="message">Message</label>
+                    <textarea 
+                      name="message" 
+                      class="input" 
+                      required cols="30" 
+                      rows="10" 
+                      placeholder="Enter your message"
+                    >
+                    </textarea>
+                </div>
+                <input type="submit" value="SUBMIT" class="easeinout">
+              </div>
+            </form>
+          </div>
+          <div class="contact">
+            <div class="contact-description">
+              <p>
+                We are here to assist you with any inquiries you may
+                have. Reach out to us through the
+                contact form or directly using the information
+                provided.
+              </p>
+            </div>
+            <div class="contact-info flex">
+              <div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Academic Way, Cedarwood, CV</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>
+                      <a href="mailto:info@cedarvalleyuniversity.com">
+                        info@CedarValleyUniversity.com
+                      </a>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <p>
+                      <a href="https://cedarvalleyuniversity.com">
+                        www.CedarValleyUniversity.com
+                      </a>
+                    </p>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-clock"></i>
+                    <p>Office Hours: Mon-Fri, 9AM-5PM</p>
+                </div>
+              </div>
+              <div class="map">
+                <img src="./src/img/map.png" alt="University Location Map">
+              </div>
+            </div>                    
+          </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -54,11 +151,11 @@
           <p>Cedarwood, CV</p>
           <P>45678</P>
           <p>+1(204) 555-1234</p>
-          <a href="mailto: admin@cedarvalleyuniversity.com">Contact us &gt;</a>
+          <a href="./contact.html">Contact us &gt;</a>
         </div>
         
           <div class="col footer-info">
-            <h4>Infromation for</h4>
+            <h4>Information for</h4>
             <div><a href="#">Alumni</a></div>
             <div><a href="#">Community</a></div>
             <div><a href="#">Current Students</a></div>
@@ -78,11 +175,27 @@
           </div>
           <div class="col col-4 flex gap-10 center footer-social icons">
             <div class="row-1 gap-10 flex center">
-              <div><a><i class="fa-brands fa-instagram"></i></a></div>
-              <div><a><i class="fa-brands fa-facebook"></i></a></div>
-              <div><a><i class="fa-brands fa-youtube"></i></a></div>
-              <div><a><i class="fa-brands fa-x-twitter"></i></a></div>
-            </div>
+              <div>
+                <a href="https://instagram.com" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://facebook.com" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://youtube.com" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://x.com" target="_blank">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
+              </div>
             <div class="row-3 text-center">
               <a class="donate-button" href="">DONATE</a>
             </div>
