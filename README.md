@@ -33,7 +33,7 @@ This website for Cedar Valley University includes features that make it easy to 
 
 * Basic Carousel: A simple, functional carousel that displays review for the fake university
 
-### Acknowledgements
+### Credits
 
 Thanks so much to the following people for their help and collaboration on this project:
 
