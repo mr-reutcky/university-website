@@ -96,7 +96,7 @@ header {
     display: none;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     nav ul {
       display: none;
       li {
@@ -308,7 +308,7 @@ main {
   font-weight: 500;
   padding: 10px;
   width: 150px;
-  border-radius: 50px;
+  border-radius: var(--app-box-radius);
   background-color: var(--app-color-primary);
   font-size: 16px;
 }
@@ -344,7 +344,7 @@ main {
     font-size: 20px;
   }
   .cols {
-    height: 350px;
+    height: 375px;
     width: 100%;
   }
 }
@@ -663,6 +663,7 @@ footer {
     color: #900;
     font-family: 500;
     padding: 8px 40px;
+    border-radius: var(--app-box-radius);
     background-color: #fff;
   }
 
